@@ -1,0 +1,5 @@
+# Ignore secrets or config files
+appsettings.json
+applicationsettings.txt
+
+appsettings.Development.json

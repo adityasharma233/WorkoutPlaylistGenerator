@@ -10,9 +10,9 @@ public class Program // Remove 'partial' if not necessary
         Console.WriteLine("Welcome to the Smart Workout Playlist Generator!");
 
         // Spotify API credentials
-        string clientId = "353fa9bbdd0d4fac8fd986eaff5d05d2";
-        string clientSecret = "4b3e977b71fa491888d15d742a97b90c";
-        string refreshToken = "AQDgvCAd0NHlyDaIakh3Er4IkVk_gTvVtTYubcDHTWXh-TM8ZsTxy5dtlj6dwh5ArREmPEb9Z3E_1-qtDPGjXDnak_auIdO9eZlINlfeOb2k36qQ0Kecb-AnK-tC8VJaEPE";
+        string clientId = "SPOTIFY_CLIENT_ID";
+        string clientSecret = "SPOTIFY_CLIENT_SECRET";
+        string refreshToken = "SPOTIFY_REFRESH_TOKEN";
 
         var playlistManager = new PlaylistManager(clientId, clientSecret, refreshToken);
 
