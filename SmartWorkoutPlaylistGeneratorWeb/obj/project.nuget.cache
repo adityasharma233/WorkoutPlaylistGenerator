@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "FSDXXqAbtpE=",
+  "success": true,
+  "projectFilePath": "/Users/adityasharma/Desktop/SmartWorkoutPlaylistGeneratorWeb/SmartWorkoutPlaylistGeneratorWeb.csproj",
+  "expectedPackageFiles": [
+    "/Users/adityasharma/.nuget/packages/bootstrap/5.3.3/bootstrap.5.3.3.nupkg.sha512",
+    "/Users/adityasharma/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,52 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Smart Workout Playlist Generator";
+}
+
+<div class="container mt-5">
+    <h1 class="mb-4">@ViewData["Title"]</h1>
+    <form method="post" class="needs-validation" novalidate>
+        <div class="mb-3">
+            <label for="playlistName" class="form-label">Playlist Name</label>
+            <input type="text" class="form-control" id="playlistName" name="PlaylistName" required>
+        </div>
+        <div class="mb-3">
+            <label for="workoutType" class="form-label">Workout Type</label>
+            <select class="form-select" id="workoutType" name="WorkoutType" required>
+                <option value="">Choose...</option>
+                <option value="Cardio">Cardio</option>
+                <option value="Strength">Strength</option>
+                <option value="Yoga">Yoga</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="desiredMood" class="form-label">Desired Mood</label>
+            <select class="form-select" id="desiredMood" name="DesiredMood" required>
+                <option value="">Choose...</option>
+                <option value="Energetic">Energetic</option>
+                <option value="Relaxed">Relaxed</option>
+                <option value="Focused">Focused</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Generate Playlist</button>
+    </form>
+
+    @if (Model.MatchingSongs != null)
+    {
+        <h2 class="mt-5">Matching Songs</h2>
+        @if (Model.MatchingSongs.Any())
+        {
+            <ul class="list-group">
+                @foreach (var song in Model.MatchingSongs)
+                {
+                    <li class="list-group-item">@song.Title by @song.Artist - Mood: @song.Mood</li>
+                }
+            </ul>
+        }
+        else
+        {
+            <p>No matching songs found for your workout preferences.</p>
+        }
+    }
+</div>
