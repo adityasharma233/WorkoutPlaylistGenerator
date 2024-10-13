@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Linq;
 using System.Threading.Tasks;
-using SmartWorkoutPlaylistGenerator; // Ensure this namespace is correct and matches your project's namespace
+using SmartWorkoutPlaylistGenerator; 
 
-public class Program // Remove 'partial' if not necessary
+public class Program 
 {
     static async Task Main(string[] args)
     {
