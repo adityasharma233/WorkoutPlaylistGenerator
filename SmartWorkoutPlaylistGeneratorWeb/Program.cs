@@ -1,11 +1,10 @@
-using SmartWorkoutPlaylistGenerator; // Ensure this namespace is correct and matches your project's namespace
+using SmartWorkoutPlaylistGenerator; 
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddSingleton<PlaylistManager>(sp => 
     new PlaylistManager(
